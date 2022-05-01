@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/v1nkkVv/section.jpg"
+    },
+    {
+        "id": 2,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/SRpHgvD/section2.jpg"
+    },
+    {
+        "id": 3,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/BzcfvFD/section3.jpg"
+    },
+    {
+        "id": 4,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/1X9KZwc/section-4.jpg"
+    },
+    {
+        "id": 5,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/V30vdJC/section5.jpg"
+    },
+    {
+        "id": 6,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/nDC1VTn/section6.jpg"
+    },
+    {
+        "id": 7,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/BrZM73y/section7.jpg"
+    },
+    {
+        "id": 8,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/dr3tGGL/section8.jpg"
+    },
+    {
+        "id": 9,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/2Fr0knS/section9.jpg"
+    },
+    {
+        "id": 10,
+        "dressname": "abc",
+        "name": "md Raj",
+        "price": "100",
+        "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
+        "img": "https://i.ibb.co/m63SRNh/section10.jpg"
+    }
+]
