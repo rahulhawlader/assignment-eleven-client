@@ -2,16 +2,18 @@ import React from 'react';
 import './Dress.css'
 
 const Dress = ({ dress }) => {
-    const { name, img, price, description, dressname, } = dress
+    const { name, img, price, description, dressname, quantity } = dress
     return (
         <div className='dress'>
             <div className='dress-style'>
                 <img src={img} alt="" />
                 <div>
                     <h2>{dressname}</h2>
-                    <p>Price: ${price}</p>
-                    <p>Description: {description}</p>
                     <p>Supplier: {name}</p>
+                    <p>Price: ${price}</p>
+                    <p>Quantity: {quantity}</p>
+                    <p>Description: {description}</p>
+
                     <button>Update</button>
                 </div>
             </div>

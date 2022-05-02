@@ -1,81 +1,91 @@
 [
     {
         "id": 1,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "WHITE SAMUSILK",
+        "quantity": "15",
+        "name": "Md Raj",
+        "price": "1250",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/v1nkkVv/section.jpg"
     },
     {
         "id": 2,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "RED LONG DRESS",
+        "quantity": "13",
+        "name": "Md Razib",
+        "price": "1800",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/SRpHgvD/section2.jpg"
     },
     {
         "id": 3,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "BLACK SILK",
+        "quantity": "45",
+        "name": "Md Rahul",
+        "price": "1500",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/BzcfvFD/section3.jpg"
     },
     {
         "id": 4,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "White Short Dress",
+        "quantity": "50",
+        "name": "Md Rakib",
+        "price": "2200",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/1X9KZwc/section-4.jpg"
     },
     {
         "id": 5,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "Black Short dress",
+        "quantity": "34",
+        "name": "Md Raju",
+        "price": "2200",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/V30vdJC/section5.jpg"
     },
     {
         "id": 6,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "White Short Silk Dress",
+        "name": "Amit Khanna",
+        "quantity": "35",
+        "price": "1800",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/nDC1VTn/section6.jpg"
     },
     {
         "id": 7,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "White Samusilk Dress",
+        "quantity": "46",
+        "name": "Md Sajib",
+        "price": "1400",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/BrZM73y/section7.jpg"
     },
     {
         "id": 8,
-        "dressname": "abc",
+        "dressname": "Dashing Dress",
+        "quantity": "34",
         "name": "md Raj",
-        "price": "100",
+        "price": "1400",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/dr3tGGL/section8.jpg"
     },
     {
         "id": 9,
-        "dressname": "abc",
-        "name": "md Raj",
-        "price": "100",
+        "dressname": "Samusilk Dresss",
+        "name": "Ma rahul",
+        "quantity": "22",
+        "price": "1599",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/2Fr0knS/section9.jpg"
     },
     {
         "id": 10,
         "dressname": "abc",
+        "quantity": "38",
         "name": "md Raj",
-        "price": "100",
+        "price": "1700",
         "description": "lore sasa sasa sasa sasasas  sasas as sasa sas sa asasa asa",
         "img": "https://i.ibb.co/m63SRNh/section10.jpg"
     }

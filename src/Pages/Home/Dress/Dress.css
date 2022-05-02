@@ -2,10 +2,14 @@
     display: flex;
     text-align: center;
     border: 1px solid gray;
+    /* width: 500px;
+    height: 300px; */
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 200px 200px;
-    /* box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3); */
+    background-color: rgba(237, 109, 100, 0.521);
+    box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.5);
+
 
 }
