@@ -4,10 +4,10 @@ import './ContacUs.css'
 
 const ContacUs = () => {
     return (
-        <div className='mt-4 '>
+        <div className='mx-4 mt-4 '>
             <h1 className='text-center text-info'> CONTACT US</h1>
             <div className='background'>
-                <img src={contact} alt="" />
+                <img className='w-auto' src={contact} alt="" />
                 <div className=''>
                     <h2 className='text-secondary'>Get in Touch</h2>
                     <form className=''>

@@ -14,7 +14,7 @@ const Dress = ({ dress }) => {
                 <p>Quantity: {quantity}</p>
                 <p>Description: {description}</p>
 
-                <button className='btn btn-primary ms-auto'>Update</button>
+                <button className='btn btn-primary ms-auto button-style'>Update</button>
             </div>
         </div>
 

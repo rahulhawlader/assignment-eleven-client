@@ -5,7 +5,7 @@ import './SummerLook.css'
 
 const SummerLook = () => {
     return (
-        <div className='summer-look'>
+        <div className='mx-5 summer-look'>
             <div className='shadow'>
                 <h1 className='text-danger'>Summer Look</h1>
 

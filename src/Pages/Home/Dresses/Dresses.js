@@ -12,8 +12,8 @@ const Dresses = () => {
 
     }, [])
     return (
-        <div className='container'>
-            <div className='row'>
+        <div>
+            <div className='mx-3'>
                 <h1 className='h2-style'>Best Seller Dresses</h1>
                 <div className='dresses-container'>{
                     dresses.slice(0, 6).map(dress => <Dress
