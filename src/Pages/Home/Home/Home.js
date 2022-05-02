@@ -8,7 +8,7 @@ import SummerLook from '../SummerLook/SummerLook';
 const Home = () => {
     return (
         <div>
-            <h1>This Is Home</h1>
+
             <Benner></Benner>
             <Dresses></Dresses>
             <SummerLook></SummerLook>
