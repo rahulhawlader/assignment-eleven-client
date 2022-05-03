@@ -43,7 +43,7 @@ const Login = () => {
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>
-                <p>New To Fasion House? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={navigateRagister}>Please Register</Link></p>
+                <p className='text-center'>New To Fasion House? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={navigateRagister}>Please Register</Link></p>
             </Form>
         </div>
     );
