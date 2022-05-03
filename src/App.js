@@ -9,6 +9,7 @@ import NotFound from './Pages/Notfound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import DressDetails from './Pages/DressDetails/DressDetails';
+import Register from './Pages/Login/Register/Register';
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path="/dress/:dressId" element={<DressDetails></DressDetails>}></Route>
         <Route path="/About" element={<About></About>}></Route>
         <Route path="/myInventore" element={<Inventore></Inventore>}></Route>
-
+        <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/Login" element={<Login></Login>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
