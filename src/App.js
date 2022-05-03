@@ -10,6 +10,7 @@ import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import DressDetails from './Pages/DressDetails/DressDetails';
 import Register from './Pages/Login/Register/Register';
+import RequireAuth from './Pages/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/Home" element={<Home></Home>}></Route>
-        <Route path="/dress/:dressId" element={<DressDetails></DressDetails>}></Route>
+        <Route path="/dress/:dressId" element={<RequireAuth>
+          <DressDetails></DressDetails>
+        </RequireAuth>}></Route>
         <Route path="/About" element={<About></About>}></Route>
         <Route path="/myInventore" element={<Inventore></Inventore>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
