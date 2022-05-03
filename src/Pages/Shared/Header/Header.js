@@ -16,9 +16,9 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#features">Best Seller</Nav.Link>
-                            <Nav.Link href="#pricing">Seller Offer</Nav.Link>
-                            <Nav.Link href="#pricing">Contact Us</Nav.Link>
+                            <Nav.Link href="Home#seller">Best Seller</Nav.Link>
+                            <Nav.Link href="Home#offer">Seller Offer</Nav.Link>
+                            <Nav.Link href="Home#contact">Contact Us</Nav.Link>
 
                         </Nav>
                         <Nav>
@@ -26,8 +26,8 @@ const Header = () => {
                             <Nav.Link eventKey={2} as={Link} to="/About">
                                 About
                             </Nav.Link>
-                            <Nav.Link eventKey={2} as={Link} to="/Inventor">
-                                Inventory
+                            <Nav.Link eventKey={2} as={Link} to="/myInventore">
+                                My Inventory
                             </Nav.Link>
                             <Nav.Link eventKey={2} as={Link} to="Login">
                                 Login

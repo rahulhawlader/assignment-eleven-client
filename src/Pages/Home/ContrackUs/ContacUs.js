@@ -4,7 +4,7 @@ import './ContacUs.css'
 
 const ContacUs = () => {
     return (
-        <div className='mx-4 mt-4 '>
+        <div id='contact' className='mx-4 mt-4 '>
             <h1 className='text-center text-info'> CONTACT US</h1>
             <div className='background'>
                 <img className='w-auto' src={contact} alt="" />
