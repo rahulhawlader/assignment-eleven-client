@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
+
 import Dress from '../Dress/Dress';
 import './Dresses.css'
 
 const Dresses = () => {
+    // const [dress, setDress] = useDress();
     const [dresses, setDresses] = useState([])
 
     useEffect(() => {
-        fetch('dresses.json')
+        fetch('http://localhost:5000/dress')
             .then(res => res.json())
             .then(data => setDresses(data))
 
@@ -17,7 +19,7 @@ const Dresses = () => {
                 <h1 className='h2-style'>Best Seller Dresses</h1>
                 <div className='dresses-container'>{
                     dresses.slice(0, 6).map(dress => <Dress
-                        key={dress.id}
+                        key={dress._id}
                         dress={dress}
                     ></Dress>)
                 }</div>
