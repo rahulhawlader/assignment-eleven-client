@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Register.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -8,6 +8,7 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 
 
 const Register = () => {
+    const [agree, setAgree] = useState(false)
     const [
         createUserWithEmailAndPassword,
         user,
@@ -32,8 +33,13 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
+        const agree = event.target.terms.checked;
 
-        createUserWithEmailAndPassword(email, password)
+        if (agree) {
+            createUserWithEmailAndPassword(email, password)
+        }
+
+
     }
 
     return (
@@ -45,10 +51,14 @@ const Register = () => {
                 <input type="email" name="email" id="" placeholder='Your Email' required />
 
                 <input type="password" name="password" id="" placeholder='Password' required />
-                <input type="checkbox" name="terms" id="terms" />
-                <label htmlFor="terms">Accept Fasion terms and condition</label>
+                <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
+                <label className={agree ? "text-primary" : "text-danger"} htmlFor="terms">Accept Fasion terms and condition</label>
 
-                <input className='bg-primary text-white mt-2' type="submit" value="Register" />
+                <input
+                    disabled={!agree}
+                    className='bg-primary text-white mt-2'
+                    type="submit"
+                    value="Register" />
 
             </form>
             <p className='text-center '>New To Fasion House? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>

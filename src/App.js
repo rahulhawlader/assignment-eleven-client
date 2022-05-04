@@ -11,6 +11,7 @@ import Header from './Pages/Shared/Header/Header';
 import DressDetails from './Pages/DressDetails/DressDetails';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
 
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }
