@@ -12,7 +12,7 @@ const useDress = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setDress(data))
-    }, [])
+    }, [dress])
     return [dress, setDress]
 };
 
