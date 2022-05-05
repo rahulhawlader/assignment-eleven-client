@@ -1,0 +1,9 @@
+.my-Stoke {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.button-style {
+    display: inline;
+}

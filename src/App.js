@@ -12,6 +12,7 @@ import DressDetails from './Pages/DressDetails/DressDetails';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import { ToastContainer } from 'react-toastify';
+import MangeInventore from './Pages/Home/ManageInventori/MangeInventore';
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
         </RequireAuth>}></Route>
         <Route path="/About" element={<About></About>}></Route>
         <Route path="/myInventore" element={<Inventore></Inventore>}></Route>
+        <Route path="/manageInventore" element={
+          <RequireAuth>
+            <MangeInventore></MangeInventore>
+          </RequireAuth>
+        }></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/Login" element={<Login></Login>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

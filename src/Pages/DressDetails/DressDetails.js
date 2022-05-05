@@ -1,8 +1,9 @@
 // import React, { useEffect, useState } from 'react';
 // import { useParams } from 'react-router-dom';
 
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useDress from "../../Hooks/useDress";
+import './DressDetails.css';
 
 
 const DressDetails = () => {
@@ -64,9 +65,9 @@ const DressDetails = () => {
     }
 
     return (
-        <div>
+        <div className="my-Stoke">
 
-            <div className='dress-style w-50'>
+            <div className='dress-style '>
                 <img src={dress.img} alt="" />
                 <div>
                     <h2>{dress.dressname}</h2>
@@ -76,17 +77,32 @@ const DressDetails = () => {
                     <p>Description: {dress.description}</p>
 
 
-                    {/* <button className="btn btn-primary mx-2">Deliver</button> */}
+                    <form onSubmit={updateQuantity}>
+                        <input className="mb-2" type="number" name="updateValue" id="" />
+                        <br />
+                        <input className="btn btn-primary" type="submit" value="Update" />
+                        <button onClick={() => deliverQuantity()}
 
-                    {/* <button className="btn btn-primary">Update</button> */}
+                            className="btn   btn-danger mx-2">Deliver</button>
+
+                    </form>
+
                 </div>
-                <form onSubmit={updateQuantity}>
-                    <input type="number" name="updateValue" id="" />
-                    <input className="btn btn-primary" type="submit" value="Update" />
 
-                </form>
-                <button onClick={() => deliverQuantity()} className="btn btn-primary mx-2">Deliver</button>
 
+
+
+            </div>
+            <div className="dress-style  button-style">
+                <h1 className="text-center align-center">MY STORE ROOM</h1>
+
+                <div  >
+                    <Link to="/manageInventore" >
+                        <button className="btn btn-primary">Manage Inventori</button>
+
+                    </Link>
+
+                </div>
 
             </div>
 
