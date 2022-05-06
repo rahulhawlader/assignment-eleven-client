@@ -1,33 +1,69 @@
-import React, { useEffect, useState } from 'react';
-import Dress from '../Dress/Dress';
+// import React, { useEffect, useState } from 'react';
+import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import useDresses from '../../../Hooks/useDresses';
+// import Dress from '../Dress/Dress';
+// import useDress from '../../../Hooks/useDress';
 import './MangeInventore.css'
 
 const MangeInventore = () => {
-    const [manageInventore, setManageInventore] = useState([]);
+    const [dresses, setDresses] = useDresses();
 
-    useEffect(() => {
-        fetch('http://localhost:5000/dress')
-            .then(res => res.json())
-            .then(data => setManageInventore(data))
-    }, [])
+    const handleDelete = (id) => {
+        const proceed = window.confirm('are you sure?')
+        if (proceed) {
+            const url = `http://localhost:5000/dress/${id}`;
+            fetch(url, {
+                method: "DELETE"
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remainig = dresses.filter(dress => dress._id !== id)
+                    setDresses(remainig)
+
+                })
+        }
+
+    }
     return (
-        <div>
-
-            <div className='all-dress'>
-                <h1 className='text-center text-'>All Dresses</h1>
-                <div className='all-dress'>
-
-                    {
-                        manageInventore.map(dress => <Dress
-                            key={dress._id}
-                            dress={dress}
-                        ></Dress>)
-                    }
-                </div>
+        <div className='mx-auto'>
 
 
+
+            <h1 className='text-center'>All dress Items</h1>
+            <div className='all-dresss container mb-2'>
+
+                {
+
+                    dresses.map(dress => <div key={dress._id}>
+
+                        <Card style={{ width: '18rem' }}  >
+                            <Card.Img variant="top" src={dress.img} />
+                            < Card.Body >
+                                <Card.Title>Dress Title</Card.Title>
+                                <Card.Text>
+                                    {dress.description}
+                                </Card.Text>
+                            </Card.Body >
+                            <ListGroup className="list-group-flush">
+                                <ListGroupItem>Name:-{dress.dressname}</ListGroupItem>
+                                <ListGroupItem>Suplaire: {dress.name}</ListGroupItem>
+                                <ListGroupItem>Price: ${dress.price}</ListGroupItem>
+                                <ListGroupItem>Quantity: {dress.quantity}</ListGroupItem>
+
+
+                            </ListGroup>
+                            <Card.Body>
+                                <button onClick={() => handleDelete(dress._id)} className='btn btn-primary'>Delete</button>
+                                {/* <button></button> */}
+                            </Card.Body>
+                        </Card >
+                    </div >)
+                }
             </div>
-        </div>
+
+
+        </div >
     );
 };
 

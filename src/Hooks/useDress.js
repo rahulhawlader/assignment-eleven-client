@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 const useDress = () => {
     const { dressId } = useParams();
-
+    // //////////////////////////////////////////
     const [dress, setDress] = useState({})
 
     useEffect(() => {
