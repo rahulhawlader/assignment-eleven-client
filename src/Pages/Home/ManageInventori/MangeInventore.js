@@ -1,5 +1,6 @@
 // import React, { useEffect, useState } from 'react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import useDresses from '../../../Hooks/useDresses';
 // import Dress from '../Dress/Dress';
 // import useDress from '../../../Hooks/useDress';
@@ -58,8 +59,15 @@ const MangeInventore = () => {
                                 {/* <button></button> */}
                             </Card.Body>
                         </Card >
+
                     </div >)
+
                 }
+                <div>
+                    <Link to="/add">
+                        <button className='btn btn-primary align-center'>Add Items</button>
+                    </Link>
+                </div>
             </div>
 
 

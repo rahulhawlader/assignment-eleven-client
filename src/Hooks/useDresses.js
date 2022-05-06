@@ -8,7 +8,7 @@ const useDresses = () => {
             .then(data => setDresses(data))
     }, [])
 
-    return [dresses]
+    return [dresses, setDresses]
 }
 
 export default useDresses;

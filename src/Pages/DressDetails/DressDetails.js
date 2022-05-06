@@ -12,7 +12,7 @@ const DressDetails = () => {
     const [dress, setDress] = useDress();
     // console.log(dress);
     const quantity = parseInt(dress.quantity) || 0;
-    console.log(quantity);
+    // console.log(quantity);
 
     const updateQuantity = (event) => {
         event.preventDefault();

@@ -13,6 +13,7 @@ import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import { ToastContainer } from 'react-toastify';
 import MangeInventore from './Pages/Home/ManageInventori/MangeInventore';
+import AddItems from './Pages/Home/AddItems/AddItems';
 
 function App() {
   return (
@@ -31,6 +32,12 @@ function App() {
             <MangeInventore></MangeInventore>
           </RequireAuth>
         }></Route>
+        <Route path="/add" element={
+
+          <RequireAuth>
+            <AddItems></AddItems>
+          </RequireAuth>}
+        ></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/Login" element={<Login></Login>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
