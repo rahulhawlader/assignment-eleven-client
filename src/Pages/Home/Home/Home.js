@@ -10,6 +10,7 @@ const Home = () => {
         <div>
 
             <Benner></Benner>
+            {/* <h1 className='text-center'>Fasion WareHouse</h1> */}
             <Dresses></Dresses>
             <SummerLook></SummerLook>
             <ContacUs></ContacUs>

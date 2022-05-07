@@ -1,15 +1,21 @@
 import React from 'react';
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import googleLogo from "../../../images/download.png"
-import facebookLogo from "../../../images/facebook.png"
 import githubLogo from "../../../images/github.png"
+import Loading from '../../Shared/Loading/Loading';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     const navigate = useNavigate();
+
+    if (loading || loading1) {
+        return <Loading></Loading>
+    }
 
     let errorElement
     if (error || error1) {
@@ -22,8 +28,14 @@ const SocialLogin = () => {
     }
 
     if (user || user1) {
-        navigate('/home')
+
+        navigate(from, { replace: true });
+
     }
+
+    // if (user || user1) {
+    //     navigate('/home')
+    // }
     return (
         <div>
             <div className='d-flex align-items-center'>
@@ -42,11 +54,7 @@ const SocialLogin = () => {
                 <span className='px-2'>Google sign In</span>
 
             </button>
-            <button className='btn btn-info my-2 mx-auto d-block w-50'>
-                <img style={{ width: "30px" }} src={facebookLogo} alt="" />
-                <span className='px-2'>Facebook sign In</span>
 
-            </button>
             <button onClick={() => signInWithGithub()} className='btn btn-primary text-white my-2 mx-auto d-block w-50'>
                 <img src={githubLogo} alt="" />
                 <span className='px-2 '>Github sign In</span>

@@ -25,6 +25,8 @@ const MangeInventore = () => {
                 })
         }
 
+
+
     }
     return (
         <div className='mx-auto'>

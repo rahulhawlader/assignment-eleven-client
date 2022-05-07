@@ -65,7 +65,7 @@ const DressDetails = () => {
     }
 
     return (
-        <div className="my-Stoke">
+        <div className="my-Stoke  dresses-container">
 
             <div className='dress-style '>
                 <img src={dress.img} alt="" />

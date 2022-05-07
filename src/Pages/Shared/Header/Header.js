@@ -33,18 +33,35 @@ const Header = () => {
                             <Nav.Link eventKey={2} as={Link} to="/About">
                                 About
                             </Nav.Link>
-                            <Nav.Link eventKey={2} as={Link} to="/myInventore">
-                                My Inventory
-                            </Nav.Link>
+
+
+                            {
+                                user &&
+                                <>
+                                    <Nav.Link eventKey={2} as={Link} to="/add">
+                                        Add
+                                    </Nav.Link>
+                                    <Nav.Link eventKey={2} as={Link} to="/manageInventore">
+                                        All Dress
+                                    </Nav.Link>
+                                    <Nav.Link eventKey={2} as={Link} to="myItems">
+                                        My Items
+                                    </Nav.Link>}
+
+                                </>
+
+                            }
                             {
                                 user ?
 
-                                    <button className='btn btn-link text-decoration-none text-white' onClick={handleSignOut}>SignOut</button>
+                                    <button className='btn btn-link text-decoration-none text-white
+                                    ' onClick={handleSignOut}>SignOut</button>
                                     :
 
                                     <Nav.Link eventKey={2} as={Link} to="Login">
                                         Login
                                     </Nav.Link>}
+
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

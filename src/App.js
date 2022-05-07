@@ -2,8 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
 import Home from './Pages/Home/Home/Home';
-import Inventore from './Pages/Inventore/Inventore';
-
 import Login from './Pages/Login/Login/Login';
 import NotFound from './Pages/Notfound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
@@ -14,6 +12,7 @@ import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import { ToastContainer } from 'react-toastify';
 import MangeInventore from './Pages/Home/ManageInventori/MangeInventore';
 import AddItems from './Pages/Home/AddItems/AddItems';
+import MyItems from './Pages/Home/MyItems/MyItems';
 
 function App() {
   return (
@@ -26,12 +25,19 @@ function App() {
           <DressDetails></DressDetails>
         </RequireAuth>}></Route>
         <Route path="/About" element={<About></About>}></Route>
-        <Route path="/myInventore" element={<Inventore></Inventore>}></Route>
+
         <Route path="/manageInventore" element={
           <RequireAuth>
             <MangeInventore></MangeInventore>
           </RequireAuth>
         }></Route>
+
+        <Route path="/myItems" element={
+          <RequireAuth>
+            <MyItems></MyItems>
+          </RequireAuth>}>
+
+        </Route>
         <Route path="/add" element={
 
           <RequireAuth>
