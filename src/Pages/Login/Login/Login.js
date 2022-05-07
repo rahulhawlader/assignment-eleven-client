@@ -7,6 +7,7 @@ import auth from '../../../firebase.init';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
+import axios from 'axios';
 
 
 const Login = () => {
@@ -46,12 +47,15 @@ const Login = () => {
 
     }
 
-    const handleSubmit = event => {
+    const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-
         signInWithEmailAndPassword(email, password);
+
+        // await signInWithEmailAndPassword(email, password);
+        // const { data } = await axios.post('https://ancient-scrubland-73255.herokuapp.com/login', { email })
+        // console.log(data);
 
     }
 

@@ -12,7 +12,7 @@ const MangeInventore = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('are you sure?')
         if (proceed) {
-            const url = `http://localhost:5000/dress/${id}`;
+            const url = `https://ancient-scrubland-73255.herokuapp.com/dress/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
@@ -33,7 +33,7 @@ const MangeInventore = () => {
 
 
 
-            <h1 className='text-center'>All dress Items</h1>
+            <h1 className='text-center'>Inventore all dress Items</h1>
             <div className='all-dresss container mb-2'>
 
                 {

@@ -25,9 +25,9 @@ const DressDetails = () => {
             const addQuantity = parseInt(newQuantity) + quantity
             // console.log(addQuantity);
             const bd = { addQuantity }
-            // const url = `http://localhost:5000/dress/${dressId}`;
+            // const url = `https://ancient-scrubland-73255.herokuapp.com/dress/${dressId}`;
 
-            fetch(`http://localhost:5000/dress/${dressId}`, {
+            fetch(`https://ancient-scrubland-73255.herokuapp.com/dress/${dressId}`, {
                 method: "PUT",
                 headers: {
                     'content-type': 'application/json'
@@ -51,7 +51,7 @@ const DressDetails = () => {
         // setDress(newDress)
         const bd = { addQuantity }
         console.log(bd);
-        fetch(`http://localhost:5000/dress/${dressId}`, {
+        fetch(`https://ancient-scrubland-73255.herokuapp.com/dress/${dressId}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

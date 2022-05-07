@@ -14,7 +14,7 @@ const MyItems = () => {
     // console.log(items);
     useEffect(() => {
         const getItems = async () => {
-            const url = `http://localhost:5000/item?email=${user?.email}`;
+            const url = `https://ancient-scrubland-73255.herokuapp.com/item?email=${user?.email}`;
 
             const { data } = await axios.get(url);
             // console.log(data);
@@ -26,7 +26,9 @@ const MyItems = () => {
     return (
         <div>
             {
-                items.map(item => <Dress dress={item}></Dress>)
+                items.map(item => <Dress
+                    key={item._id}
+                    dress={item}></Dress>)
             }
         </div>
     );

@@ -12,7 +12,7 @@ const AddItems = () => {
     const onSubmit = data => {
         console.log(data);
         // const url =;
-        fetch(`http://localhost:5000/dress`, {
+        fetch(`https://ancient-scrubland-73255.herokuapp.com/dress`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

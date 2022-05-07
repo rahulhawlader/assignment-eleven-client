@@ -1,20 +1,14 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import useDresses from '../../../Hooks/useDresses';
 
 import Dress from '../Dress/Dress';
 import './Dresses.css'
 
 const Dresses = () => {
-    // const [dress, setDress] = useDress();
-    // const [dresses, setDresses] = useState([])
+
     const [dresses] = useDresses()
 
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/dress')
-    //         .then(res => res.json())
-    //         .then(data => setDresses(data))
 
-    // }, [])
     return (
         <div>
             <div id="seller" className='mx-3'>
