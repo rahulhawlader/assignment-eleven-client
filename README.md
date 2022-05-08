@@ -1,12 +1,11 @@
-# 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LIVE-LINK [Create React App] (https://assignment-elevenn.web.app/)
 
 
 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Clint Code Link [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-rahulhawlader]
+
+# Server Code Link [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-rahulhawlader]
 
 
 
