@@ -11,7 +11,9 @@ const Dress = ({ dress }) => {
     return (
 
         <div className='dress-style'>
+
             <img src={img} alt="" />
+
             <div>
                 <h2>{dressname}</h2>
                 <p>Supplier: {name}</p>

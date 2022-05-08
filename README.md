@@ -1,19 +1,19 @@
-# LIVE-LINK [Create React App] (https://assignment-elevenn.web.app/)
+# LIVE-LINK [Create React App] ('https://assignment-elevenn.web.app/')
 
 
 
 
-# Clint Code Link [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-rahulhawlader]
+# Cleint Code Link ['https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-rahulhawlader']
 
-# Server Code Link [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-rahulhawlader]
+# Server Code Link ['https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-rahulhawlader']
 
 
 
 * এখানে একটি জামা কাপড়ের ওয়েবসাইট তৈরি করা হয়েছে,
 
-* একটা সেকশন আছে সে সেকশনে 6 ডিজাইনের জামা আছে,
+* একটা সেকশন আছে সে সেকশনে 6 ডিজাইনের জামা আছে, 
 
-* সেই সিকশন একটা বাটন আছে সে বাটনে ক্লিক করলে অন্য একটা সেকশনে চলে যায় সেখান থেকে একটি বাটন আছে সে বাটনে ক্লিক করলে কোয়ান্টিটি এক এক করে বাড়ে এবং আরেকটা সেকশন আছে সেটায় ক্লিক করলে কোয়ান্টিটি একবারে,
+* সেই সিকশন একটা বাটন আছে সে বাটনে ক্লিক করলে অন্য একটা সেকশনে চলে যায় সেখান থেকে একটি বাটন আছে সে বাটনে ক্লিক করলে কোয়ান্টিটি এক এক করে বাড়ে এবং আরেকটা বাটন  আছে সেটায় ক্লিক করলে কোয়ান্টিটি বারে,
 
 * সেখানে আরেকটি বাটন আছে সেখানে ক্লিক করলে একটা ফর্মে চলে যায় সে ফর মে অনেকগুলো অপশন আছে অপশনগুলো ফিলাপ করলে আপডেট বাটনে চাপ দিলে অল ইনভেন্টরি পেজে চলে যায়
 
